@@ -4,7 +4,7 @@ import { MoviesList } from './components/MoviesList';
 import moviesFromServer from './api/movies.json';
 
 function filterMovies(movies, { query }) {
-  let filteredMovies = [...movies];
+  let filteredMovies = movies;
 
   if (query) {
     const normalizedQuery = query.trim().toLowerCase();
